@@ -10,6 +10,7 @@ const locations = [
     availableSlots: 5,
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=300&h=300&fit=crop",
     amenities: ["Wi-Fi", "Coffee Bar"],
+    extras: ["Spa Treatments", "Nail Bar"],
   },
   {
     name: "Holiday Inn SoHo",
@@ -19,6 +20,7 @@ const locations = [
     availableSlots: 3,
     image: "https://images.unsplash.com/photo-1497215842964-222b430dc094?w=300&h=300&fit=crop",
     amenities: ["Wi-Fi", "Quiet Zone"],
+    extras: ["Hair Salon", "Massage"],
   },
   {
     name: "Holiday Inn FiDi",
@@ -28,6 +30,7 @@ const locations = [
     availableSlots: 7,
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop",
     amenities: ["Wi-Fi", "Lounge"],
+    extras: ["Spa Package", "Manicure"],
   },
 ];
 
@@ -42,7 +45,7 @@ const NearbyLocations = () => {
       </div>
       <div className="space-y-3">
         {locations.map((loc) => (
-          <LocationCard key={loc.name} {...loc} />
+          <LocationCard key={loc.name} {...loc} extras={loc.extras} />
         ))}
       </div>
     </section>

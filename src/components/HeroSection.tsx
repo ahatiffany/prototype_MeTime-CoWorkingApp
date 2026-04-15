@@ -15,6 +15,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background" />
       </div>
 
+      {/* Logo */}
+      <div className="absolute right-5 top-6 z-10 text-right">
+        <h2 className="font-display text-2xl font-bold text-primary-foreground">MeTime</h2>
+        <p className="text-[10px] font-medium tracking-wide text-primary-foreground/70">They play while you work.</p>
+      </div>
+
       {/* Content */}
       <div className="relative px-5 pb-12 pt-20">
         <div className="animate-fade-up space-y-4">

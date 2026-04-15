@@ -1,4 +1,4 @@
-import { MapPin, Star, Clock, Baby } from "lucide-react";
+import { MapPin, Star, Clock, Baby, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 interface LocationCardProps {
@@ -9,6 +9,7 @@ interface LocationCardProps {
   availableSlots: number;
   image: string;
   amenities: string[];
+  extras?: string[];
 }
 
 const LocationCard = ({
@@ -19,6 +20,7 @@ const LocationCard = ({
   availableSlots,
   image,
   amenities,
+  extras = [],
 }: LocationCardProps) => {
   return (
     <div className="group flex gap-4 rounded-2xl bg-card p-3 shadow-sm transition-all duration-200 hover:shadow-md active:scale-[0.98]">
@@ -41,6 +43,12 @@ const LocationCard = ({
           {amenities.slice(0, 2).map((a) => (
             <Badge key={a} variant="secondary" className="rounded-full px-2 py-0 text-[10px] font-medium">
               {a}
+            </Badge>
+          ))}
+          {extras.map((e) => (
+            <Badge key={e} variant="outline" className="rounded-full border-warm/30 px-2 py-0 text-[10px] font-medium text-warm">
+              <Sparkles className="mr-0.5 h-2.5 w-2.5" />
+              {e}
             </Badge>
           ))}
         </div>
