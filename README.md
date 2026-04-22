@@ -48,7 +48,6 @@ MeTime is an app for parents looking for short-term virtual offices with free ch
  3. AI Prompt 2: Add a company logo in the upper right corner titled “MeTime” with a subtitle “They play while you work.” Under each hotel listing, add other amenities like spa treatments or hair/nail services.
  4. AI Generated V2: (modified hero + new amenities)
  5. AI Visual Edits Prompt 1: Change transparency so How It Works is readable
-    - Before & After
 
 ## Feedback
 Feedback welcome.
