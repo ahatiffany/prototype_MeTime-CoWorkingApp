@@ -1,5 +1,5 @@
 # Booking App (prototype built with Lovable)
-MeTime is a booking app for parents looking for short-term virtual offices with free childcare services that's fully vetted.
+MeTime is an app for parents looking for short-term virtual offices with free childcare services that's fully vetted.
 
 ## Table of Contents
 - Use Case
